@@ -19,31 +19,43 @@
                 </nav>
         </header>
 
+        <header id="tops">
+                <nav>
+                        <a href="index.html">About</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="contact.html">Contact</a>
+                </nav>
+        </header>
+
         <div id="middle">
                 <div id="portfoliocontent">
                         <p id=portfolio> Portfolio</p>
                         <div class="line2"></div>
                         <hr />
-                        <!-- code of was adapted from here: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
-                        <div class="flex-container">
-                                <img class="flex-item" src="./assets/images/Hangman.jpg" />
-                                <div class="box-text">Hangman</div>
+                        <!-- code of was adapted from here: https://www.w3schools.com/howto/howto_css_two_columns.asp -->
+                        <div class="row">
+                                <div class="column" style="background: url(./assets/images/Hangman.jpg); background-size: cover;">
+                                        <h2>Hangman</h2>
+                        
+                                </div>
+                                <div class="column" style="background: url(./assets/images/RPG.jpg); background-size: cover;">
+                                        <h2>RPG Game</h2>
+                                </div>
                         </div>
-                        <div class="flex-container">
-                                <img class="flex-item" src="./assets/images/RPG.jpg" />
-                                <div class="box-text">RPG Game</div>
+                        <div class="row">
+                                <div class="column" style="background: url(./assets/images/Trivia.jpg); background-size: cover;">
+                                        <h2>Trivia</h2>
+                                </div>
+                                <div class="column" style="background: url(./assets/images/Rutgers.jpg); background-size: cover;">
+                                        <h2>Rutgers Widget Game</h2>
+                                </div>
                         </div>
-                        <div class="flex-container">
-                                <img class="flex-item" src="./assets/images/Trivia.jpg" />
-                                <div class="box-text">Trivia Game</div>
-                        </div>
-                        <div class="flex-container">
-                                <img class="flex-item" src="./assets/images/Rutgers.jpg" />
-                                <div class="box-text">Rutgers Widget Game</div>
-                        </div>
-                        <div class="flex-container">
-                                <img class="flex-item" src="./assets/images/RPS.jpg" />
-                                <div class="box-text">Rock Paper Scissors</div>
+                        <div class="row">
+                                <div class="column" style="background: url(./assets/images/RPS.jpg); background-size: cover;">
+                                        <h2>Rock Paper Scissors</h2>
+                                </div>
+                                <div class="column">
+                                </div>
                         </div>
 
                 </div>

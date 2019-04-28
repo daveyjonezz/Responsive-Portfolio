@@ -12,6 +12,9 @@
     background-color: white;
   }
 
+  #tops{
+    display: none;
+  }
 
   #top > h1{
     background-color: #4aaaa5;
@@ -29,6 +32,10 @@
   }
 
   #top > nav > a:last-child{
+    border-right: none;
+  }
+
+  #tops > nav > a:last-child{
     border-right: none;
   }
 
@@ -123,13 +130,13 @@
 
 #portfoliocontent{
   padding:30px;
-  max-width: 750px;
+  width: 750px;
   margin: 0 auto;
   height: auto;
   background-color: white;
 }
 
-.flex-container {
+/* .flex-container {
   width: 274px;
   height: 205.5px;
   display: inline-block;
@@ -143,17 +150,33 @@
   overflow: auto;
   width: 100%;
   height: 100%;
+} */
+
+
+.column {
+  float: left;
+  width: 46%;
+  padding: 10px;
+  margin: 2%;
+  height: 300px;
 }
 
-.box-text {
-  z-index: 100;
-  position: absolute;
-  bottom:20px;
-  width: 100%;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
   text-align: center;
+  bottom: 0;
+  width: 100%;
   color: white;
   background-color: #4aaaa5;
+  padding: 10px;
   font-size: 24px;
+  margin-top: 230px;
   font-family: 'Georgia', Times, "Times New Roman", serif;
 }
 
@@ -174,13 +197,16 @@
   #me-image {
     width: 60%
   }
+  h2 {
+    font-size:18px;
+  }
 }
 
 @media only screen and (max-width:640px) {
   /* For mobile phones: */
   #middle, #me-image {
     width:96%;
-    /* margin-left: 10px; */
+    margin-left: 10px;
   }
   #middle{
     margin-top: 20px;
@@ -190,14 +216,41 @@
     margin: 0 0 10px 0;
   }
   #top {
-    display: static;
-
+    display: inline;
   }
   #top > h1 {
     width:100%;
+    text-align: center;
   }
-  .flex-container {
+  #top > nav > a{
+    display: none;
+  }
+  #tops {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    border-bottom:2px solid #666666;
+    background-color: white;
+    padding:3px;
+  }
+  #tops > nav > a{
+    text-decoration: none;
+    color: grey;
+    display: relative;
+    height: 15px;
+    text-align: center;
+    border-right: 2px solid grey;
+    padding: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    width: 100%;
+    margin: auto;
+  }
+  .column {
+    width: 100%;
+  }
+  h2 {
+    font-size:24px;
   }
 }
